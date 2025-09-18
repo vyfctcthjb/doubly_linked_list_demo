@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+APP_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"   # .../Contents
+REPO_ROOT="$(cd -- "$APP_DIR/../../.." && pwd)"                     # repo root
+
+# Attempt to bootstrap permissions/quarantine silently (best effort)
+if [[ -f "$REPO_ROOT/scripts/bootstrap_mac.command" ]]; then
+  bash "$REPO_ROOT/scripts/bootstrap_mac.command" >/dev/null 2>&1 || true
+fi
+
+SCRIPT_PATH="$REPO_ROOT/scripts/Run_Interactive_Demo_Tests.command"
+OSA_SCRIPT=$(cat <<'APL'
+on run argv
+  set thePath to item 1 of argv
+  tell application "Terminal"
+    activate
+    do script "export PRETTY_UI=1; export KEEP_LEGACY=0; export CLEAR_MENU=1; export PAUSE_AFTER_SECTIONS=1; export PAGINATE_HELP=1; export LANG=en_US.UTF-8; export LC_ALL=en_US.UTF-8; bash \"" & thePath & "\""
+  end tell
+end run
+APL
+)
+/usr/bin/osascript - "$SCRIPT_PATH" <<<"$OSA_SCRIPT" 2>/dev/null || (export PRETTY_UI=1 KEEP_LEGACY=0 CLEAR_MENU=1 PAUSE_AFTER_SECTIONS=1 PAGINATE_HELP=1 LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8; /bin/bash "$SCRIPT_PATH")

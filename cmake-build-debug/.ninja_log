@@ -1,0 +1,13 @@
+# ninja log v6
+3	414	1758155904859189057	CMakeFiles/doubly_linked_list_demo.dir/main.cpp.o	c4cbb9b923fa0cbd
+415	449	1758155905270894308	doubly_linked_list_demo	140319201662b82a
+459	498	1758156451013345167	generic_demo	f7df6b71c0130e3e
+3	459	1758156450557192665	CMakeFiles/generic_demo.dir/generic_main.cpp.o	e6564bac8aad8f73
+3	445	1758156805970880961	CMakeFiles/generic_demo.dir/generic_main.cpp.o	e6564bac8aad8f73
+445	480	1758156806413136973	generic_demo	f7df6b71c0130e3e
+3	445	1758157660789508089	CMakeFiles/generic_demo.dir/generic_main.cpp.o	e6564bac8aad8f73
+445	481	1758157661231988474	generic_demo	f7df6b71c0130e3e
+4	420	1758158803025425620	CMakeFiles/doubly_linked_list_demo.dir/main.cpp.o	c4cbb9b923fa0cbd
+420	455	1758158803441329088	doubly_linked_list_demo	140319201662b82a
+4	425	1758160283758173490	CMakeFiles/doubly_linked_list_demo.dir/main.cpp.o	c4cbb9b923fa0cbd
+425	461	1758160284178546996	doubly_linked_list_demo	140319201662b82a
