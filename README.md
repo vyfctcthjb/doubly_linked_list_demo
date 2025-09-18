@@ -114,7 +114,7 @@ make run          # Educational demo: prints Forward/Backward once
 make run-generic  # Interactive REPL (templated list)
 ```
 
-### UI Customization (Optional)
+### UI Customization (Still in progress)
 
 The interactive demo (`generic_demo`) can be customized using environment variables:
 
