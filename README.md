@@ -49,7 +49,7 @@ An educational walkthrough of doubly-linked list operations with:
 - A generic templated list + interactive REPL demo
 - Polished scripts that work after clone or zip
 
-`main.cpp` has easy-to-read code and comments so you can understand how the basic operations work.
+**`main.cpp` has easy-to-read code and comments so you can understand how the basic operations work.**
  
 ## Why this project?
 
@@ -58,8 +58,7 @@ I built it to be **educational first**:
 
 - `main.cpp` is written with **step-by-step comments** so someone brand new to doubly linked lists can follow along.
 - The code shows **exactly what’s happening in memory** when you insert, remove, or detach nodes.
-- There’s both a **simple demo** (strings/ints) and a **generic templated version**, so learners can start small and then see how real C++ handles type-safe containers.
-- ASCII art, flowcharts, and REPL menus make it **visual and interactive**, not just dry code.
+- There’s both a **simple educational demo** (strings/ints) that highlights the basic flow, and a **generic templated version with full REPL commands**, so learners can start small and then explore how real C++ handles type-safe containers.
 
 The goal → anyone opening this repo should walk away saying:  
 *“Okay, now I actually understand how a doubly linked list works under the hood.”*
@@ -95,11 +94,15 @@ The goal → anyone opening this repo should walk away saying:
 ## Simple Demo Strings
 <img width="439" height="212" alt="Screenshot 2025-09-18 at 1 09 51 AM" src="https://github.com/user-attachments/assets/8b54a961-1f47-4489-b3b7-b101045a4804" />
 
-## Simple Educational Version(shows flow)
+## Expected output (educational):
+#### main.cpp breaks this down simple with detailed comments!
 
-Doubly Linked List — Educational Demo
-Forward:   A <-> C <-> B
-Backward:  B <-> C <-> A**
+
+```
+Forward:   A ⇄ C ⇄ B
+Backward:  B ⇄ C ⇄ A
+```
+---
 
 
 ## Quick Start (works for everyone)
@@ -154,15 +157,6 @@ The interactive demo (`generic_demo`) can be customized using environment variab
 ```bash
 PRETTY_UI=1 make run-generic
 ```
-
-**Expected output (educational):**
-
-```
-Forward:   A ⇄ C ⇄ B
-Backward:  B ⇄ C ⇄ A
-```
-
----
 
 ## Program Flow (high-level)
 
