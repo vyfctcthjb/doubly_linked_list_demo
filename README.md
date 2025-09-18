@@ -9,6 +9,7 @@
 </p>
 
 <pre>
+  <p align="center">
 ╔════════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                    ║
 ║                 ██████╗ ██╗   ██╗██████╗ ██╗     ██╗███╗   ██╗██╗  ██╗             ║
@@ -19,10 +20,11 @@
 ║                 ╚═════╝  ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝             ║
 ║                                                                                    ║
 ║                     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                         ║
-║                     ▓ Doubly Linked List Implementation ▓                          ║
+║                     ▓ Doubly Linked List Implementation  ▓                         ║
 ║                     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                         ║
 ║                                 Justin Guida                                       ║
 ╚════════════════════════════════════════════════════════════════════════════════════╝
+    <p align="center">
 </pre>
 
 <p align="center">
@@ -49,6 +51,7 @@ An educational walkthrough of doubly-linked list operations with:
 
 `main.cpp` has easy-to-read code and comments so you can understand how the basic operations work.
 
+
 ## Table of contents
 - [Quick Start](#quick-start-works-for-everyone)
 - [Demos](#demos)
@@ -61,8 +64,22 @@ An educational walkthrough of doubly-linked list operations with:
 - [Troubleshooting](#troubleshooting-macos)
 
 ---
+## Interactive REPL/Commands
+<img width="609" height="645" alt="Screenshot 2025-09-18 at 1 04 39 AM" src="https://github.com/user-attachments/assets/a91b5a20-f9f2-4184-af8c-1949409c56e1" />
+
+## Demo of Commands
+
+<img width="650" height="444" alt="Screenshot 2025-09-18 at 1 06 12 AM" src="https://github.com/user-attachments/assets/ee70b1f6-3561-4ad0-80d2-8b943b689922" />
+
+
+## Simple Demo Integers
+<img width="442" height="211" alt="Screenshot 2025-09-18 at 1 08 14 AM" src="https://github.com/user-attachments/assets/24186558-d06c-4483-ba96-2878a40ce318" />
+
+## Simple Demo Strings
+<img width="439" height="212" alt="Screenshot 2025-09-18 at 1 09 51 AM" src="https://github.com/user-attachments/assets/8b54a961-1f47-4489-b3b7-b101045a4804" />
 
 ## Quick Start (works for everyone)
+
 
 **Recommended (git clone)**
 ```bash
