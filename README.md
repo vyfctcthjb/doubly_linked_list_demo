@@ -1,3 +1,4 @@
+
 <p align="center">
   <pre>
 ██████╗ ██╗   ██╗██╗   ██╗██████╗ ██╗   ██╗██╗     ██╗██╗███╗   ██╗██╗  ██╗
@@ -107,12 +108,12 @@ Backward:  B ⇄ C ⇄ A
 
 ```mermaid
 flowchart TD
-  Start([Start]) --> NewList[Construct List]
-  NewList --> A[insertAfter(nullptr, A)]
-  A --> B[insertAfter(A, B)]
-  B --> C[insertAfter(A, C)]
-  C --> PrintF[printForward → A ⇄ C ⇄ B]
-  C --> PrintB[printBackward → B ⇄ C ⇄ A]
+    Start([Start]) --> NewList["Construct List"]
+    NewList --> A["insertAfter(nullptr, A)"]
+    A --> B["insertAfter(A, B)"]
+    B --> C["insertAfter(A, C)"]
+    C --> PrintF["printForward → A ⇄ C ⇄ B"]
+    C --> PrintB["printBackward → B ⇄ C ⇄ A"]
 ```
 **ASCII Fallback:**
 ```
@@ -125,11 +126,12 @@ Start -> Construct List -> insertAfter(nullptr, A) -> insertAfter(A, B) -> inser
 
 ```mermaid
 flowchart TD
-  I[insertAfter(cur,new)] --> E{head == ∅?}
-  E -- Yes --> Empty["head=tail=new; new.prev=∅; new.next=∅"]
-  E -- No --> T{cur == tail?}
-  T -- Yes --> Append["cur.next=new; new.prev=cur; new.next=∅; tail=new"]
-  T -- No --> Mid["s=cur.next; new.prev=cur; new.next=s; cur.next=new; s.prev=new"]
+    subgraph "insertAfter(cur, new)"
+        E{"head == ∅?"} -->|Yes| Empty["head=tail=new"]
+        E -->|No| T{"cur == tail?"}
+        T -->|Yes| Append["Append to end, new becomes tail"]
+        T -->|No| Mid["Insert in middle"]
+    end
 ```
 **ASCII Fallback:**
 ```
