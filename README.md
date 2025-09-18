@@ -1,18 +1,37 @@
 <p align="center">
-  <pre>
-██████╗ ██╗   ██╗██╗   ██╗██████╗ ██╗   ██╗██╗     ██╗██╗███╗   ██╗██╗  ██╗
-██╔══██╗██║   ██║██║   ██║██╔══██╗██║   ██║██║     ██║██║████╗  ██║╚██╗██╔╝
-██║  ██║██║   ██║██║   ██║██████╔╝██║   ██║██║     ██║██║██╔██╗ ██║ ╚███╔╝
-██║  ██║██║   ██║██║   ██║██╔══██╗██║   ██║██║     ██║██║██║╚██╗██║ ██╔██╗
-██████╔╝╚██████╔╝╚██████╔╝██████╔╝╚██████╔╝███████╗██║██║██║ ╚████║██╔╝ ██╗
-╚═════╝  ╚═════╝  ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
-  </pre>
+  <img src="https://img.shields.io/badge/D-red?style=for-the-badge" alt="D">
+  <img src="https://img.shields.io/badge/U-black?style=for-the-badge" alt="U">
+  <img src="https://img.shields.io/badge/B-red?style=for-the-badge" alt="B">
+  <img src="https://img.shields.io/badge/L-black?style=for-the-badge" alt="L">
+  <img src="https://img.shields.io/badge/I-red?style=for-the-badge" alt="I">
+  <img src="https://img.shields.io/badge/N-black?style=for-the-badge" alt="N">
+  <img src="https://img.shields.io/badge/X-red?style=for-the-badge" alt="X">
 </p>
 
+<pre>
+╔════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                    ║
+║                 ██████╗ ██╗   ██╗██████╗ ██╗     ██╗███╗   ██╗██╗  ██╗             ║
+║                 ██╔══██╗██║   ██║██╔══██╗██║     ██║████╗  ██║╚██╗██╔╝             ║
+║                 ██║  ██║██║   ██║██████╔╝██║     ██║██╔██╗ ██║ ╚███╔╝              ║
+║                 ██║  ██║██║   ██║██╔══██╗██║     ██║██║╚██╗██║ ██╔██╗              ║
+║                 ██████╔╝╚██████╔╝██████╔╝███████╗██║██║ ╚████║██╔╝ ██╗             ║
+║                 ╚═════╝  ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝             ║
+║                                                                                    ║
+║                     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                         ║
+║                     ▓ Doubly Linked List Implementation ▓                          ║
+║                     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                         ║
+║                                 Justin Guida                                       ║
+╚════════════════════════════════════════════════════════════════════════════════════╝
+</pre>
+
 <p align="center">
-  <a href="https://github.com/jguida941/doubly_linked_list_demo/actions"><img alt="build" src="https://img.shields.io/github/actions/workflow/status/jguida941/doubly_linked_list_demo/main.yml?branch=main&style=for-the-badge&logo=github&label=Build"></a>
-  <a href="https://github.com/jguida941/doubly_linked_list_demo/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license/jguida941/doubly_linked_list_demo?style=for-the-badge&label=License"></a>
+  <img alt="C++" src="https://img.shields.io/badge/C++-blue?style=for-the-badge&logo=cplusplus&logoColor=white">
+  <img alt="Platform" src="https://img.shields.io/badge/Mac%20%26%20Linux-black?style=for-the-badge&logo=linux&logoColor=white">
+  <img alt="Editor" src="https://img.shields.io/badge/Clion-green?style=for-the-badge&logo=clion&logoColor=white">
+  <img alt="Build" src="https://img.shields.io/badge/Makefile-orange?style=for-the-badge&logo=gnu&logoColor=white">
 </p>
+
 
 # Doubly Linked List Demo
 
