@@ -32,15 +32,15 @@ An educational walkthrough of doubly-linked list operations with:
 `main.cpp` has easy-to-read code and comments so you can understand how the basic operations work.
 
 ## Table of contents
-- [Quick Start](#quick-start)
+- [Quick Start](#quick-start-works-for-everyone)
 - [Demos](#demos)
-- [UI Customization](#ui-customization)
-- [Program Flow](#program-flow)
+- [UI Customization](#ui-customization-optional)
+- [Program Flow](#program-flow-high-level)
 - [API](#api-core--generic)
 - [Build](#build)
 - [Interactive REPL](#interactive-repl-generic-demo)
 - [Repository](#repository)
-- [Troubleshooting](#troubleshooting)
+- [Troubleshooting](#troubleshooting-macos)
 
 ---
 
