@@ -1,4 +1,3 @@
-
 <p align="center">
   <pre>
 ██████╗ ██╗   ██╗██╗   ██╗██████╗ ██╗   ██╗██╗     ██╗██╗███╗   ██╗██╗  ██╗
@@ -12,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/jguida941/doubly_linked_list_demo/actions"><img alt="build" src="https://img.shields.io/github/actions/workflow/status/jguida941/doubly_linked_list_demo/main.yml?branch=main&style=for-the-badge&logo=github&label=Build"></a>
-  <a href="https://github.com/jguida941/doubly_linked_list_demo/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/github/license/jguida941/doubly_linked_list_demo?style=for-the-badge&label=License"></a>
+  <a href="https://github.com/jguida941/doubly_linked_list_demo/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license/jguida941/doubly_linked_list_demo?style=for-the-badge&label=License"></a>
 </p>
 
 # Doubly Linked List Demo
