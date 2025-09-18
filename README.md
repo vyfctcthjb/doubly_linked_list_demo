@@ -95,6 +95,13 @@ The goal → anyone opening this repo should walk away saying:
 ## Simple Demo Strings
 <img width="439" height="212" alt="Screenshot 2025-09-18 at 1 09 51 AM" src="https://github.com/user-attachments/assets/8b54a961-1f47-4489-b3b7-b101045a4804" />
 
+## Simple Educational Version(shows flow)
+
+Doubly Linked List — Educational Demo
+Forward:   A <-> C <-> B
+Backward:  B <-> C <-> A**
+
+
 ## Quick Start (works for everyone)
 
 
@@ -102,16 +109,17 @@ The goal → anyone opening this repo should walk away saying:
 ```bash
 git clone https://github.com/jguida941/doubly_linked_list_demo.git
 cd doubly_linked_list_demo
-bash scripts/bootstrap_mac.command     # macOS one-time (exec + quarantine + noexec check)
-make run                               # educational demo
-make run-generic                       # interactive REPL (templated list)
+bash scripts/bootstrap_mac.command  # macOS one-time (exec + quarantine + noexec check)
+make run-generic                    # Interactive REPL: (templated list, full commands)
+make run                            # Educational: beginner-friendly, prints forward/backward)
 ```
 
 **ZIP users on macOS**
 ```bash
 # Right-click the unzipped folder → "New Terminal at Folder"
 bash scripts/bootstrap_mac.command
-make run
+make run_generic   # Interactive REPL (templated list, full commands)
+make run           # Educational: (beginner-friendly, prints forward/backward)
 ```
 
 **Prefer a double-click app?** After running the bootstrap once, you can also use:
@@ -120,7 +128,7 @@ make run
 
 If Finder says “could not be executed due to access privileges”, your folder is likely on a noexec volume (exFAT/NTFS/SMB). Move it to your home drive (APFS), e.g. `~/Dev/doubly_linked_list_demo`, re-run `bootstrap_mac.command`.
 
-**Windows**: double-click `scripts/Run_Interactive_Demo_Tests.bat` or run the `.ps1` in PowerShell.
+**Windows**: double-click `scripts/Run_Interactive_Demo_Tests.bat` or run the `.ps1` in PowerShell. **Note: This needs to be tested I have a Mac**
 
 ---
 
