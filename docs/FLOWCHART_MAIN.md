@@ -1,19 +1,19 @@
 # Doubly Linked List: Flowchart Deep Dive
 An extended, educational walkthrough of `main.cpp` using Mermaid for logic and compact ASCII for node states.
 
-(Companion doc for `main.cpp` in this repo. Start with `README.md` for the overview.)_
+(Companion doc for `main.cpp` in this repo. Start with `README.md` for the overview.)
 
 ## Program Flow
 
 ```mermaid
 flowchart TD
-    Start([Start]) --> Construct[Construct DoublyLinkedList]
-    Construct --> Create[Create Nodes A, B, C]
-    Create --> InsertA[insertAfter(nullptr, A)]
-    InsertA --> InsertB[insertAfter(A, B)]
-    InsertB --> InsertC[insertAfter(A, C)]
-    InsertC --> PrintF[printForward → A <-> C <-> B]
-    InsertC --> PrintB[printBackward → B <-> C <-> A]
+    Start([Start]) --> Construct["Construct DoublyLinkedList"]
+    Construct --> Create["Create Nodes A, B, C"]
+    Create --> InsertA["insertAfter(nullptr, A)"]
+    InsertA --> InsertB["insertAfter(A, B)"]
+    InsertB --> InsertC["insertAfter(A, C)"]
+    InsertC --> PrintF["printForward → A ⇄ C ⇄ B"]
+    InsertC --> PrintB["printBackward → B ⇄ C ⇄ A"]
     PrintF --> End([End])
     PrintB --> End
 ```
@@ -22,11 +22,12 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    I[insertAfter(curNode, newNode)] --> E{head == nullptr?}
-    E -- Yes --> Case1["Case 1 — Empty List:\nhead = tail = newNode\nnewNode.prev = ∅\nnewNode.next = ∅"]
-    E -- No --> T{curNode == tail?}
-    T -- Yes --> Case2["Case 2 — Append After Tail:\ncurNode.next = newNode\nnewNode.prev = curNode\nnewNode.next = ∅\ntail = newNode"]
-    T -- No --> Case3["Case 3 — Middle Insertion:\nsucNode = curNode.next\nnewNode.prev = curNode\nnewNode.next = sucNode\ncurNode.next = newNode\nsucNode.prev = newNode"]
+    subgraph "insertAfter(curNode, newNode)"
+        E{"head == nullptr?"} -->|Yes| Case1["Case 1: Empty List<br/>head = tail = newNode"]
+        E -->|No| T{"curNode == tail?"}
+        T -->|Yes| Case2["Case 2: Append After Tail<br/>curNode.next = newNode<br/>tail = newNode"]
+        T -->|No| Case3["Case 3: Middle Insertion<br/>sucNode = curNode.next<br/>...4 pointers rewired..."]
+    end
 ```
 
 ## Case Studies
@@ -101,8 +102,8 @@ Effect: Node C spliced between A and B; four pointers rewired (A.next, C.prev, C
 
 ## Traversals
 
-- Forward:  [ A ] <-> [ C ] <-> [ B ]
-- Backward: [ B ] <-> [ C ] <-> [ A ]
+- Forward:  [ A ] ⇄ [ C ] ⇄ [ B ]
+- Backward: [ B ] ⇄ [ C ] ⇄ [ A ]
 
 Note: Forward traversal follows `next` pointers; backward traversal follows `prev` pointers.
 
@@ -110,11 +111,11 @@ Note: Forward traversal follows `next` pointers; backward traversal follows `pre
 
 ```mermaid
 flowchart TD
-    S([Start]) --> A[insertAfter(nullptr, A) — Case 1]
-    A --> B[insertAfter(A, B) — Case 2]
-    B --> C[insertAfter(A, C) — Case 3]
-    C --> F[printForward]
-    C --> R[printBackward]
+    S([Start]) --> A["insertAfter(nullptr, A) — Case 1"]
+    A --> B["insertAfter(A, B) — Case 2"]
+    B --> C["insertAfter(A, C) — Case 3"]
+    C --> F["printForward"]
+    C --> R["printBackward"]
     F --> E([End])
     R --> E
 ```
@@ -154,11 +155,12 @@ Note on Generic Version
 
 ```mermaid
 flowchart TD
-    I[insertBefore(curNode, newNode)] --> E{head == nullptr?}
-    E -- Yes --> Empty["Empty List:\nhead = tail = newNode\nnewNode.prev = ∅\nnewNode.next = ∅"]
-    E -- No --> H{curNode == head?}
-    H -- Yes --> BeforeHead["Insert before head:\nnewNode.next = head\nhead.prev = newNode\nhead = newNode\nnewNode.prev = ∅"]
-    H -- No --> Middle["Middle insert:\npred = curNode.prev\nnewNode.prev = pred\nnewNode.next = curNode\npred.next = newNode\ncurNode.prev = newNode"]
+    subgraph "insertBefore(curNode, newNode)"
+        E{"head == nullptr?"} -->|Yes| Empty["Empty List<br/>head = tail = newNode"]
+        E -->|No| H{"curNode == head?"}
+        H -->|Yes| BeforeHead["Insert before head<br/>newNode.next = head<br/>head = newNode"]
+        H -->|No| Middle["Middle insert<br/>...4 pointers rewired..."]
+    end
 ```
 
 Snapshots
@@ -179,15 +181,17 @@ head -> [ A ] -> [ X ] -> [ C ] -> [ D ] <- tail
 
 ```mermaid
 flowchart TD
-    R[remove(node)] --> Z{node == ∅?}
-    Z -- Yes --> Done[No-op]
-    Z -- No --> S{head == tail == node?}
-    S -- Yes --> Single["Single-node list:\nhead = tail = ∅"]
-    S -- No --> H{node == head?}
-    H -- Yes --> RemHead["Remove head:\nhead = head.next\nhead.prev = ∅"]
-    H -- No --> T{node == tail?}
-    T -- Yes --> RemTail["Remove tail:\ntail = tail.prev\ntail.next = ∅"]
-    T -- No --> Mid["Remove middle:\nnode.prev.next = node.next\nnode.next.prev = node.prev"]
+    subgraph "remove(node)"
+        R --> Z{"node == ∅?"}
+        Z -->|Yes| Done["No-op"]
+        Z -->|No| S{"head == tail == node?"}
+        S -->|Yes| Single["Single-node list<br/>head = tail = ∅"]
+        S -->|No| H{"node == head?"}
+        H -->|Yes| RemHead["Remove head<br/>head = head.next"]
+        H -->|No| T{"node == tail?"}
+        T -->|Yes| RemTail["Remove tail<br/>tail = tail.prev"]
+        T -->|No| Mid["Remove middle<br/>...2 pointers rewired..."]
+    end
 ```
 
 Snapshots
@@ -241,9 +245,11 @@ head -> [ A ] <- tail   ==>   head -> ∅, tail -> ∅
 
 ```mermaid
 flowchart TD
-    C[clear()] --> E{head == ∅?}
-    E -- Yes --> Done[No-op]
-    E -- No --> Loop["Iterate from head, delete nodes"] --> Reset["head = ∅\ntail = ∅"]
+    subgraph "clear()"
+        E{"head == ∅?"} -->|Yes| Done["No-op"]
+        E -->|No| Loop["Iterate from head, delete nodes"]
+        Loop --> Reset["head = ∅<br/>tail = ∅"]
+    end
 ```
 
 Effect
@@ -265,9 +271,10 @@ tail -> ∅
 
 ```mermaid
 flowchart TD
-    F[find(value)] --> N{head == ∅?}
-    N -- Yes --> ReturnNull[return ∅]
-    N -- No --> It["cur = head\nwhile cur:\n  if cur.value == value: return cur\n  cur = cur.next\nreturn ∅"]
+    subgraph "find(value)"
+        N{"head == ∅?"} -->|Yes| ReturnNull["return ∅"]
+        N -->|No| It["Iterate from head<br/>if cur.value == value: return cur<br/>...<br/>return ∅"]
+    end
 ```
 
 Example
@@ -285,9 +292,11 @@ find("Z")  => returns ∅
 
 ```mermaid
 flowchart TD
-    R[reverse()] --> E{empty or single?}
-    E -- Yes --> Done[No-op]
-    E -- No --> Loop["cur = head\nwhile cur:\n  swap(cur.next, cur.prev)\n  cur = cur.prev  (old next)\n"] --> SwapHT[swap(head, tail)]
+    subgraph "reverse()"
+        E{"empty or single?"} -->|Yes| Done["No-op"]
+        E -->|No| Loop["For each node:<br/>swap(cur.next, cur.prev)"]
+        Loop --> SwapHT["swap(head, tail)"]
+    end
 ```
 
 Before/After
