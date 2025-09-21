@@ -39,7 +39,7 @@ struct DoublyLinkedList {
 
     /*
      * head != nullptr → list already has stuff in it.
-     * curNode == nullptr → but you told me “insert after nothing
+     * curNode == nullptr → 
      * Someone calls insertAfter(nullptr, newNode) on a list that already has elements.
      * Guard triggers → error printed → no insertion → program doesn’t crash.
      */
